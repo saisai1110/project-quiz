@@ -1,0 +1,171 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&family=Outfit:wght@400;500;700;900&display=swap');
+
+body {
+  font-family: 'Outfit', 'Noto Sans TC', sans-serif;
+  background-color: #f3f4f6; /* Slate gray background */
+  overflow-x: hidden;
+}
+
+/* Neo-brutalism Design System Helpers */
+.neo-border {
+  border: 4px solid #111827;
+}
+
+.neo-shadow {
+  box-shadow: 6px 6px 0px 0px #111827;
+}
+
+.neo-shadow-sm {
+  box-shadow: 3px 3px 0px 0px #111827;
+}
+
+.neo-shadow-lg {
+  box-shadow: 10px 10px 0px 0px #111827;
+}
+
+.neo-card {
+  border: 4px solid #111827;
+  box-shadow: 8px 8px 0px 0px #111827;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #ffffff;
+}
+
+.neo-btn {
+  border: 4px solid #111827;
+  box-shadow: 4px 4px 0px 0px #111827;
+  transition: all 0.1s ease;
+  transform: translate(0, 0);
+}
+
+.neo-btn:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px 0px #111827;
+}
+
+.neo-btn-hover:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px 0px #111827;
+}
+
+.neo-btn-hover:active {
+  transform: translate(3px, 3px);
+  box-shadow: 1px 1px 0px 0px #111827;
+}
+
+/* Dynamic Floating Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-15px) rotate(3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float-delayed {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-12px) rotate(-3deg);
+  }
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float-delayed {
+  animation: float-delayed 4.5s ease-in-out infinite;
+  animation-delay: 1s;
+}
+
+/* Page Transitions */
+.slide-in {
+  animation: slideIn 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.slide-out {
+  animation: slideOut 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.98);
+  }
+}
+
+/* Loading Scanner Animation */
+@keyframes scan {
+  0% {
+    top: 0%;
+  }
+  50% {
+    top: 100%;
+  }
+  100% {
+    top: 0%;
+  }
+}
+
+.scanner-line {
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  background: #111827;
+  animation: scan 2s linear infinite;
+}
+
+/* Custom Grid Background for Neo-Brutalism */
+.grid-bg {
+  background-size: 20px 20px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                    linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+}
+
+/* Confetti Sparkles */
+@keyframes pop-emoji {
+  0% {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.animate-pop-emoji {
+  animation: pop-emoji 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+/* Custom 3D SVGs styling */
+.svg-3d {
+  filter: drop-shadow(4px 6px 0px #111827);
+}

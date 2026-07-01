@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>畢業專題防止鬧翻檢查表 - 心理測驗網站</title>
+  <meta name="description" content="選錯指導教授痛苦一學期，選錯專題組員痛苦一整年！快來測看看你是神隊友還是寄生獸，保護你大學最後一年不被氣到中風的生存指南！">
+  
+  <!-- Tailwind CSS Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Tailwind Configuration for Custom Theme Elements -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brutalBlack: '#111827',
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Custom CSS Animations & Neo-Brutalism shadow settings -->
+  <link rel="stylesheet" href="./style.css">
+  
+  <!-- Data and Application Script Files -->
+  <script src="./data.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body class="grid-bg min-h-screen text-gray-900 flex flex-col items-center justify-between p-4 md:p-8">
+
+  <!-- Header Decoration -->
+  <header class="w-full max-w-4xl mx-auto flex items-center justify-between py-4 select-none">
+    <div class="flex items-center gap-2 bg-yellow-300 border-4 border-gray-900 px-3 py-1.5 rounded-lg shadow-[3px_3px_0px_0px_#111827] transform -rotate-1 text-xs md:text-sm font-black tracking-wider">
+      🎓 GRADUATION PROJECT SURVIVAL GUIDE
+    </div>
+    <div class="flex items-center gap-2 bg-red-400 border-4 border-gray-900 px-3 py-1.5 rounded-lg shadow-[3px_3px_0px_0px_#111827] transform rotate-2 text-xs md:text-sm font-black tracking-wider">
+      ⚠️ 雷包偵測雷達 v1.0
+    </div>
+  </header>
+
+  <!-- Main Container -->
+  <main class="w-full max-w-2xl mx-auto flex-grow flex items-center justify-center py-6 md:py-10">
+
+    <!-- 1. LANDING PAGE SECTION -->
+    <section id="landing-section" class="w-full bg-white rounded-3xl border-4 border-gray-900 shadow-[8px_8px_0px_0px_#111827] p-6 md:p-10 space-y-8 relative overflow-hidden slide-in">
+      
+      <!-- Floating Decorative Shapes in Background -->
+      <div class="absolute -top-6 -left-6 w-20 h-20 opacity-20 pointer-events-none animate-float">
+        <svg viewBox="0 0 100 100" fill="#EF4444"><polygon points="50,15 90,85 10,85" /></svg>
+      </div>
+      <div class="absolute -bottom-8 -right-8 w-24 h-24 opacity-20 pointer-events-none animate-float-delayed">
+        <svg viewBox="0 0 100 100" fill="#8B5CF6"><polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36" /></svg>
+      </div>
+      
+      <!-- Intro Title Graphic -->
+      <div class="text-center space-y-4">
+        <div class="inline-block bg-yellow-400 text-gray-900 border-4 border-gray-900 font-extrabold text-2xl md:text-4xl px-6 py-4 rounded-2xl shadow-[6px_6px_0px_0px_#111827] transform -rotate-1 tracking-tight leading-snug">
+          <h1 id="intro-title" class="font-black">畢業專題防止鬧翻檢查表</h1>
+        </div>
+      </div>
+
+      <!-- Intro Subtitle Box -->
+      <div class="bg-indigo-50 border-4 border-gray-900 p-5 rounded-2xl shadow-[4px_4px_0px_0px_#111827] text-gray-800 leading-relaxed text-sm md:text-base font-semibold space-y-2">
+        <p id="intro-subtitle"></p>
+      </div>
+
+      <!-- Interactive 3D Geometry Demonstration for fun -->
+      <div class="flex justify-around items-center py-4 bg-gray-50 border-4 border-gray-900 rounded-2xl shadow-[4px_4px_0px_0px_#111827] select-none">
+        <div class="animate-float flex flex-col items-center">
+          <svg class="w-10 h-10 svg-3d" viewBox="0 0 100 100"><polygon points="54,18 94,88 14,88" fill="#111827"/><polygon points="50,14 90,84 10,84" fill="#EF4444" stroke="#111827" stroke-width="6"/></svg>
+          <span class="text-[10px] font-bold mt-1 text-red-500">狂戰士</span>
+        </div>
+        <div class="animate-float-delayed flex flex-col items-center">
+          <svg class="w-10 h-10 svg-3d" viewBox="0 0 100 100"><rect x="19" y="19" width="70" height="70" rx="4" fill="#111827"/><rect x="15" y="15" width="70" height="70" rx="4" fill="#1E3A8A" stroke="#111827" stroke-width="6"/></svg>
+          <span class="text-[10px] font-bold mt-1 text-blue-800">打卡機</span>
+        </div>
+        <div class="animate-float flex flex-col items-center">
+          <svg class="w-10 h-10 svg-3d" viewBox="0 0 100 100"><polygon points="53,8 67,39 101,39 73,60 84,94 53,73 22,94 33,60 5,39 39,39" fill="#111827"/><polygon points="50,5 64,36 98,36 70,57 81,91 50,70 19,91 30,57 2,36 36,36" fill="#8B5CF6" stroke="#111827" stroke-width="6"/></svg>
+          <span class="text-[10px] font-bold mt-1 text-purple-600">報告王</span>
+        </div>
+        <div class="animate-float-delayed flex flex-col items-center">
+          <svg class="w-10 h-10 svg-3d" viewBox="0 0 100 100"><polygon points="58,8 18,58 48,58 38,98 88,48 58,48" fill="#111827"/><polygon points="55,5 15,55 45,55 35,95 85,45 55,45" fill="#111827" stroke="#111827" stroke-width="6"/></svg>
+          <span class="text-[10px] font-bold mt-1 text-gray-900">自走砲</span>
+        </div>
+      </div>
+
+      <!-- Start button -->
+      <div class="text-center">
+        <button id="btn-start" class="w-full md:w-auto px-10 py-5 rounded-2xl bg-emerald-400 border-4 border-gray-900 shadow-[6px_6px_0px_0px_#111827] text-xl font-black tracking-wider text-gray-900 neo-btn-hover hover:bg-emerald-300">
+          🚀 開始測驗（抓出雷組員）
+        </button>
+      </div>
+
+    </section>
+
+    <!-- 2. QUIZ SECTION -->
+    <section id="quiz-section" class="w-full hidden space-y-6 slide-in">
+      
+      <!-- Progress Bar Container -->
+      <div class="bg-white rounded-2xl border-4 border-gray-900 shadow-[4px_4px_0px_0px_#111827] p-4 flex items-center justify-between gap-4">
+        <span class="text-sm font-black tracking-wider text-gray-800 shrink-0">雷包偵測進度</span>
+        <div class="flex-grow bg-gray-200 h-6 rounded-full border-2 border-gray-900 overflow-hidden relative">
+          <div id="progress-bar-inner" class="bg-indigo-500 h-full rounded-full transition-all duration-300 border-r-2 border-gray-900" style="width: 10%"></div>
+        </div>
+        <span id="progress-text" class="text-sm font-black bg-indigo-100 text-indigo-700 px-3 py-1 rounded-lg border-2 border-indigo-700 shrink-0">1 / 10</span>
+      </div>
+
+      <!-- Question Card -->
+      <div id="quiz-card" class="bg-white rounded-3xl border-4 border-gray-900 shadow-[8px_8px_0px_0px_#111827] p-6 md:p-8 space-y-6">
+        
+        <!-- Question Title -->
+        <h2 id="question-text" class="text-lg md:text-xl font-extrabold text-gray-900 leading-snug border-b-4 border-dashed border-gray-200 pb-4">
+          Q1. 載入中...
+        </h2>
+
+        <!-- Options List -->
+        <div id="options-container" class="space-y-4">
+          <!-- Dynamically Loaded Buttons -->
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- 3. LOADING SECTION -->
+    <section id="loading-section" class="w-full hidden bg-white rounded-3xl border-4 border-gray-900 shadow-[8px_8px_0px_0px_#111827] p-10 flex flex-col items-center justify-center space-y-8 relative overflow-hidden min-h-[300px]">
+      
+      <!-- Sweeping Retro Laser Line Scanner -->
+      <div class="scanner-line"></div>
+      
+      <!-- Radar Scanner animation -->
+      <div class="relative w-24 h-24 flex items-center justify-center">
+        <div class="absolute inset-0 rounded-full border-4 border-gray-900 animate-ping opacity-25"></div>
+        <div class="w-16 h-16 rounded-full border-8 border-gray-900 border-t-yellow-400 animate-spin"></div>
+      </div>
+
+      <!-- Funny dynamic loading texts -->
+      <div class="text-center space-y-2">
+        <h3 class="text-xl font-black text-gray-900">正在精密剖析中...</h3>
+        <p id="loading-status" class="text-base font-bold text-indigo-600 bg-indigo-50 border-2 border-indigo-600 px-4 py-2 rounded-xl inline-block">
+          正在分析你的專題雷包指數...
+        </p>
+      </div>
+
+    </section>
+
+    <!-- 4. RESULT SECTION -->
+    <section id="result-section" class="w-full hidden space-y-8 slide-in">
+      
+      <!-- Geometric Shape Header Graphic -->
+      <div class="w-full bg-white rounded-3xl border-4 border-gray-900 shadow-[8px_8px_0px_0px_#111827] p-6 md:p-8 flex flex-col items-center text-center relative overflow-hidden">
+        
+        <!-- Background graphics -->
+        <div class="absolute top-4 left-4 w-12 h-12 opacity-10"><svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="#111827"/></svg></div>
+        <div class="absolute bottom-4 right-4 w-12 h-12 opacity-10"><svg viewBox="0 0 100 100"><polygon points="50,15 90,85 10,85" fill="#111827"/></svg></div>
+
+        <p class="text-xs md:text-sm font-black tracking-wider text-gray-500 mb-3">🎓 經過十項靈魂拷問，你的專題定位是：</p>
+        
+        <!-- Large Animated Floating Shape -->
+        <div id="result-graphic-container" class="mb-4 animate-float select-none">
+          <!-- Dynamic SVG injected here -->
+        </div>
+
+        <!-- Result Personality Title -->
+        <h2 id="result-name" class="">
+          載入中...
+        </h2>
+
+        <!-- Details Box -->
+        <div id="result-details-card" class="w-full text-left space-y-4">
+          
+          <div>
+            <span class="inline-block bg-gray-900 text-white text-xs font-black px-2.5 py-1 rounded border-2 border-gray-900 mb-1.5 uppercase">⚡ 性格描述</span>
+            <p id="result-description" class="text-sm md:text-base font-bold text-gray-800 leading-relaxed"></p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 border-t-2 border-dashed border-gray-300 pt-3">
+            <div>
+              <span class="inline-block bg-emerald-500 text-white text-xs font-black px-2.5 py-1 rounded border-2 border-gray-900 mb-1.5">💪 專題超能力</span>
+              <p id="result-power" class="text-xs md:text-sm font-bold text-gray-700"></p>
+            </div>
+            <div>
+              <span class="inline-block bg-yellow-400 text-gray-900 text-xs font-black px-2.5 py-1 rounded border-2 border-gray-900 mb-1.5">🤝 適合隊友</span>
+              <p id="result-partner" class="text-xs md:text-sm font-bold text-gray-700"></p>
+            </div>
+          </div>
+
+          <div class="border-t-2 border-dashed border-gray-300 pt-3">
+            <div>
+              <span class="inline-block bg-red-500 text-white text-xs font-black px-2.5 py-1 rounded border-2 border-gray-900 mb-1.5">☠️ 專題天敵</span>
+              <p id="result-enemy" class="text-xs md:text-sm font-bold text-red-600"></p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- 5. ANSWER HISTORY & REVIEW ("你的靈魂拷問紀錄") -->
+      <div class="w-full bg-white rounded-3xl border-4 border-gray-900 shadow-[8px_8px_0px_0px_#111827] p-6 space-y-4">
+        
+        <div class="flex items-center gap-2 border-b-4 border-gray-900 pb-3">
+          <span class="text-2xl">🧐</span>
+          <h3 class="text-lg md:text-xl font-black text-gray-900">你的靈魂拷問紀錄</h3>
+        </div>
+
+        <!-- History cards container -->
+        <div id="history-list" class="max-h-72 overflow-y-auto pr-2 space-y-4">
+          <!-- Dynamic historical list injected here -->
+        </div>
+
+      </div>
+
+      <!-- Action buttons -->
+      <div class="flex flex-col sm:flex-row gap-4 justify-center items-stretch sm:items-center">
+        <button id="btn-copy" class="flex-1 px-6 py-4 rounded-xl bg-indigo-400 border-4 border-gray-900 shadow-[4px_4px_0px_0px_#111827] text-base font-black text-gray-900 neo-btn hover:bg-indigo-300 flex items-center justify-center gap-2">
+          <span>📋 複製測驗結果</span>
+        </button>
+        <button id="btn-restart" class="flex-1 px-6 py-4 rounded-xl bg-yellow-400 border-4 border-gray-900 shadow-[4px_4px_0px_0px_#111827] text-base font-black text-gray-900 neo-btn hover:bg-yellow-300 flex items-center justify-center gap-2">
+          <span>🔄 重新測驗</span>
+        </button>
+      </div>
+
+    </section>
+
+  </main>
+
+  <!-- Footer Info -->
+  <footer class="w-full max-w-4xl mx-auto text-center py-6 text-xs font-black text-gray-500 border-t-4 border-dashed border-gray-300 mt-6 select-none">
+    © 2026 畢業專題防止鬧翻檢查表製作小組 | 爆肝做專題，且行且珍惜。
+  </footer>
+
+  <!-- Toast Notification Alert Box -->
+  <div id="toast" class="fixed bottom-6 left-1/2 transform -translate-x-1/2 bg-yellow-300 border-4 border-gray-900 px-6 py-3 rounded-2xl shadow-[4px_4px_0px_0px_#111827] font-extrabold text-sm md:text-base text-gray-900 transition-all duration-300 opacity-0 translate-y-4 pointer-events-none z-50 flex items-center gap-2">
+    📋 複製成功！
+  </div>
+
+</body>
+</html>
