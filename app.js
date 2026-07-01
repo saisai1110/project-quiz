@@ -278,7 +278,7 @@ function renderResultPage(result) {
 // Copy results to clipboard
 function handleCopy() {
   const resultName = document.getElementById("result-name").innerText;
-  const siteUrl = window.location.href.split('#')[0]; // strip anchors
+  const siteUrl = "https://saisai1110.github.io/project-quiz/";
   const copyText = `【畢業專題防止鬧翻檢查表】\n我的專題靈魂檢測結果是：\n✨ ${resultName} ✨\n\n快來測看看你是神隊友還是寄生獸！\n測驗連結 👉 ${siteUrl}`;
 
   if (navigator.clipboard && window.isSecureContext) {
