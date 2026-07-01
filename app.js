@@ -2,6 +2,7 @@
 const state = {
   currentStep: "intro", // "intro", "quiz", "loading", "result"
   currentQuestionIndex: 0,
+  nickname: "", // User's nickname
   answers: [] // Array of { questionId, type, key, selectedText, questionText }
 };
 
@@ -239,6 +240,12 @@ function renderResultPage(result) {
   const graphicContainer = document.getElementById("result-graphic-container");
   graphicContainer.innerHTML = getGeometrySVG(result.shape, result.hexColor);
 
+  // Inject prominent Nickname in header
+  const nickname = state.nickname || "無名雷組員";
+  document.getElementById("result-header-text").innerHTML = `
+    <span class="text-base md:text-lg font-black text-white bg-indigo-600 border-2 border-gray-900 rounded-lg px-2.5 py-0.5 inline-block mr-1 shadow-[2px_2px_0px_0px_#111827] transform -rotate-1">${nickname}</span>，🎓 經過十項靈魂拷問，你的專題定位是：
+  `;
+
   // Fill result information
   const resultNameEl = document.getElementById("result-name");
   resultNameEl.innerText = result.name;
@@ -277,9 +284,10 @@ function renderResultPage(result) {
 
 // Copy results to clipboard
 function handleCopy() {
+  const nickname = state.nickname || "無名雷組員";
   const resultName = document.getElementById("result-name").innerText;
   const siteUrl = "https://saisai1110.github.io/project-quiz/";
-  const copyText = `【畢業專題防止鬧翻檢查表】\n我的專題靈魂檢測結果是：\n✨ ${resultName} ✨\n\n快來測看看你是神隊友還是寄生獸！\n測驗連結 👉 ${siteUrl}`;
+  const copyText = `【畢業專題防止鬧翻檢查表】\n專題組員「${nickname}」的定位檢測結果是：\n✨ ${resultName} ✨\n\n快來測看看你是神隊友還是寄生獸！\n測驗連結 👉 ${siteUrl}`;
 
   if (navigator.clipboard && window.isSecureContext) {
     navigator.clipboard.writeText(copyText)
@@ -329,7 +337,11 @@ function fallbackCopyText(text) {
 function handleRestart() {
   state.currentQuestionIndex = 0;
   state.answers = [];
+  state.nickname = "";
   state.currentStep = "intro";
+  
+  // Reset input field value
+  document.getElementById("nickname-input").value = "";
 
   resultSection.classList.add("hidden");
   landingSection.classList.remove("hidden");
@@ -343,6 +355,9 @@ function handleRestart() {
 
 // Event Listeners
 btnStart.addEventListener("click", () => {
+  // Capture nickname
+  state.nickname = document.getElementById("nickname-input").value.trim();
+  
   state.currentStep = "quiz";
   landingSection.classList.add("hidden");
   quizSection.classList.remove("hidden");
