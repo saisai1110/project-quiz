@@ -252,7 +252,7 @@ function renderResultPage(result) {
   // Inject prominent Nickname in header
   const nickname = state.nickname || "無名雷組員";
   document.getElementById("result-header-text").innerHTML = `
-    <span class="text-base md:text-lg font-black text-white bg-indigo-600 border-2 border-gray-900 rounded-lg px-2.5 py-0.5 inline-block mr-1 shadow-[2px_2px_0px_0px_#111827] transform -rotate-1">${nickname}</span>，🎓 經過十項靈魂拷問，你的專題定位是：
+    <span class="text-base md:text-lg font-black text-white bg-indigo-600 border-2 border-gray-900 rounded-lg px-2.5 py-0.5 inline-block mr-1 shadow-[2px_2px_0px_0px_#111827] transform -rotate-1">${nickname}</span>🎓 經過靈魂拷問，你的專題定位是：
   `;
 
   // Fill result information
