@@ -13,7 +13,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "【靈感乍現制】半夜三點突然有 FU 就狂做，平常時間像一條死魚。" },
         { type: "type4", key: "D", text: "【薛丁格的作息】進度永遠處於「有跟沒有之間」，死線前一天才會現身。" },
         { type: "type5", key: "E", text: "【高端經理制】自己不熬夜，但會在群組發「大家辛苦了」來展現存在感。" },
-        { type: "type6", key: "F", text: "【無政府狀態】你管我幾點睡？不要一直催我好不好，煩死了！" }
+        { type: "type6", key: "F", text: "【無政府狀態】你管我幾點睡？不要一直催我好不好，煩死了！" },
+        { type: "type7", key: "G", text: "【彈性配合制】通常會在群組問「大家什麼時候方便呢？我都可以盡量配合～」" }
       ]
     },
     {
@@ -25,7 +26,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "覺得沒人懂我的藝術，陷入自我懷疑，然後發限動討拍。" },
         { type: "type4", key: "D", text: "「沒差啦，只要能畢業，你要做一坨大便我都說讚。」" },
         { type: "type5", key: "E", text: "順著大家的話轉彎，默默把別人的好點子包裝成自己的提議。" },
-        { type: "type6", key: "F", text: "「好啊，都不要用啊，你們這麼厲害你們提啊！」（開始瘋狂擺爛）" }
+        { type: "type6", key: "F", text: "「好啊，都不要用啊，你們這麼厲害你們提啊！」（開始瘋狂擺爛）" },
+        { type: "type7", key: "G", text: "態度溫和地說：「沒關係，那我們來看看怎麼把大家的想法結合在一起，找出更好的方案！」" }
       ]
     },
     {
@@ -37,7 +39,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "覺得預設版型太死板，靈感一來直接把整個排版打掉重練。" },
         { type: "type4", key: "D", text: "「哇！這排版好好看喔！辛苦了！」（然後繼續滑手機）。" },
         { type: "type5", key: "E", text: "負責把這些美美的 Mockup 放到簡報裡，準備報告時獨攬設計功勞。" },
-        { type: "type6", key: "F", text: "「為什麼要用這種排版？我覺得很醜欸，但我不知道怎麼改，反正我不要。」" }
+        { type: "type6", key: "F", text: "「為什麼要用這種排版？我覺得很醜欸，但我不知道怎麼改，反正我不要。」" },
+        { type: "type7", key: "G", text: "認真聽取大家的意見，試著融合不同風格，做出一個大家都能接受的「安全牌」版本。" }
       ]
     },
     {
@@ -49,7 +52,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "【意念回覆】有看，有讀，但懶得打字，半夜才會突然丟一堆資料上來。" },
         { type: "type4", key: "D", text: "【貼圖機器】不管討論多嚴肅，只用迷因貼圖回答。" },
         { type: "type5", key: "E", text: "【艾特狂魔】喜歡一直 @ 所有人統整結論，像個沒有薪水的專案經理。" },
-        { type: "type6", key: "F", text: "【失蹤人口】不看不回，逼急了就回一句「我很忙，晚點看」。" }
+        { type: "type6", key: "F", text: "【失蹤人口】不看不回，逼急了就回一句「我很忙，晚點看」。" },
+        { type: "type7", key: "G", text: "【暖心回覆】看到訊息會先按表情符號確認收到，然後溫和地回覆，是群組裡的穩定力量。" }
       ]
     },
     {
@@ -61,7 +65,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "突然想吃很遠的那家文青拉麵，即使要等一小時也無所謂。" },
         { type: "type4", key: "D", text: "我負責點餐！大家要不要吃那家超讚的麻辣鍋？我請大家喝飲料！" },
         { type: "type5", key: "E", text: "順便幫指導教授點一份送過去，做足公關。" },
-        { type: "type6", key: "F", text: "你們點的我都不要，找不到我想吃的我就生氣。" }
+        { type: "type6", key: "F", text: "你們點的我都不要，找不到我想吃的我就生氣。" },
+        { type: "type7", key: "G", text: "「大家這陣子辛苦了！我剛好買了一些小點心跟熱飲，大家先休息一下吃個東西吧～」" }
       ]
     },
     {
@@ -73,7 +78,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "完全不管他，反正我的部分夠酷就好了。" },
         { type: "type4", key: "D", text: "打不過就加入他，大家一起擺爛，看誰先受不了。" },
         { type: "type5", key: "E", text: "表面上跟他稱兄道弟，但在期末互評表上給他打 0 分。" },
-        { type: "type6", key: "F", text: "在群組直接三字經開噴：「你到底有沒有要畢業啊？」" }
+        { type: "type6", key: "F", text: "在群組直接三字經開噴：「你到底有沒有要畢業啊？」" },
+        { type: "type7", key: "G", text: "會私底下溫柔地傳訊息關心對方：「最近是不是遇到什麼困難？需要幫忙分擔一些進度嗎？」" }
       ]
     },
     {
@@ -85,7 +91,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "成績隨便，我只想做酷東西，教授看不懂是他沒品味。" },
         { type: "type4", key: "D", text: "算好及格邊緣的付出比例，60 分萬歲，多一分都是浪費。" },
         { type: "type5", key: "E", text: "只要在報告那天把故事說得漂亮，拿高分輕而易舉。" },
-        { type: "type6", key: "F", text: "有過就好，沒過就是組長帶領無方，不是我的問題。" }
+        { type: "type6", key: "F", text: "有過就好，沒過就是組長帶領無方，不是我的問題。" },
+        { type: "type7", key: "G", text: "成績順其自然，最重要的是大家在這個過程中合作愉快、不要吵架，順利畢業就好。" }
       ]
     },
     {
@@ -97,7 +104,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "常常遲到，但偶爾會提出讓教授眼睛一亮的奇葩點子。" },
         { type: "type4", key: "D", text: "坐在最角落負責點頭、微笑、以及幫忙開投影機。" },
         { type: "type5", key: "E", text: "主要發言人，非常擅長把只有 10% 的進度吹噓成 80%。" },
-        { type: "type6", key: "F", text: "教授一質疑就立刻臭臉，內心狂罵教授什麼都不懂。" }
+        { type: "type6", key: "F", text: "教授一質疑就立刻臭臉，內心狂罵教授什麼都不懂。" },
+        { type: "type7", key: "G", text: "在教授的嚴厲批評和組員的低落情緒之間擔任「緩衝墊」，適時幫雙方打圓場。" }
       ]
     },
     {
@@ -109,7 +117,8 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "未命名-1的拷貝(2).pdf" },
         { type: "type4", key: "D", text: "阿明負責的部分.docx" },
         { type: "type5", key: "E", text: "給教授的精美報告版.pptx" },
-        { type: "type6", key: "F", text: "爛專題_不要再退件了.pdf" }
+        { type: "type6", key: "F", text: "爛專題_不要再退件了.pdf" },
+        { type: "type7", key: "G", text: "大家辛苦了_專題報告_整合版.pdf" }
       ]
     },
     {
@@ -121,7 +130,34 @@ const QUIZ_DATA = {
         { type: "type3", key: "C", text: "沒有我，這組的東西會無聊到讓人睡著。" },
         { type: "type4", key: "D", text: "沒有我，這組的人會因為壓力太大而崩潰。" },
         { type: "type5", key: "E", text: "沒有我，這組會因為不會講話而被教授電飛。" },
-        { type: "type6", key: "F", text: "價值？我不退群組就是對你們最大的恩賜了。" }
+        { type: "type6", key: "F", text: "價值？我不退群組就是對你們最大的恩賜了。" },
+        { type: "type7", key: "G", text: "坦白說，沒有我在中間協調，這組早就因為吵架而原地解散了。" }
+      ]
+    },
+    {
+      id: 11,
+      text: "關於開會的「時間觀念」，你通常是哪一種人？",
+      options: [
+        { type: "type1", key: "A", text: "提早半小時到，並開始在群組奪命連環 call 問大家到哪了。" },
+        { type: "type2", key: "B", text: "絕對準時，踩著點抵達，一分不差。" },
+        { type: "type3", key: "C", text: "看心情，有時候提早到，有時候大遲到，完全無法預測。" },
+        { type: "type4", key: "D", text: "習慣性小遲到 10 到 15 分鐘，通常帶著買好的飲料出現賠罪。" },
+        { type: "type5", key: "E", text: "表面上說會準時，但通常會找個「剛剛在跟教授談事情」的光鮮理由遲到。" },
+        { type: "type6", key: "F", text: "遲到半小時以上，如果有人敢催，還會見笑轉生氣。" },
+        { type: "type7", key: "G", text: "提早 5 到 10 分鐘抵達，幫大家佔好位子、開好冷氣，溫和地等大家。" }
+      ]
+    },
+    {
+      id: 12,
+      text: "討論專題方向時，你的「主見程度」落在光譜的哪裡？",
+      options: [
+        { type: "type1", key: "A", text: "我全都要管！從大方向到字體大小，全部都要照我的意思做。" },
+        { type: "type2", key: "B", text: "我只管我負責的部分，別人的事我沒意見，也別來管我。" },
+        { type: "type3", key: "C", text: "靈感來的時候意見超多且天馬行空，沒靈感時一句話都不想說。" },
+        { type: "type4", key: "D", text: "完全沒意見。「好啊」、「都可以」、「你決定就好」，是我最常說的三句話。" },
+        { type: "type5", key: "E", text: "很會見風轉舵，假裝自己很有主見，其實都是把別人的想法換句話說。" },
+        { type: "type6", key: "F", text: "別人提什麼我都反對、都覺得爛，但我自己也提不出更好的。" },
+        { type: "type7", key: "G", text: "認真傾聽每個人的意見，不強求自己的想法，努力找出大家都能接受的共識。" }
       ]
     }
   ],
@@ -203,7 +239,20 @@ const QUIZ_DATA = {
       textColor: "text-gray-900",
       hexColor: "#111827",
       accentBg: "bg-gray-100"
+    },
+    type7: {
+      id: "type7",
+      name: "☕ 溫潤的團隊調和劑",
+      desc: "你是群組裡最溫暖的恆溫器。不追求極致的完美，但也絕對不會推卸責任。擁有極高的同理心與溝通能力，當組員意見分歧即將開戰時，你總是那個跳出來打圓場、找出折衷方案的靈魂人物。",
+      power: "極高的情緒價值，能把瀕臨解散的團隊重新黏合在一起。",
+      partner: "幾乎所有類型（你是大家的百搭款）。",
+      enemy: "沒有真正的天敵，但遇到「爆走自走砲」時，你的心靈能量會被快速消耗殆盡。",
+      shape: "oval",
+      color: "bg-orange-300",
+      textColor: "text-orange-400",
+      hexColor: "#FDBA74",
+      accentBg: "bg-orange-50"
     }
   },
-  tieBreakerOrder: ["type6", "type1", "type5", "type3", "type2", "type4"]
+  tieBreakerOrder: ["type6", "type1", "type5", "type3", "type7", "type2", "type4"]
 };

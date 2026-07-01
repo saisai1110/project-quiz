@@ -70,6 +70,13 @@ function getGeometrySVG(shape, hexColor) {
           <polygon points="55,5 15,55 45,55 35,95 85,45 55,45" fill="${hexColor}" stroke="#111827" stroke-width="6" stroke-linejoin="round"/>
         </svg>
       `;
+    case "oval":
+      return `
+        <svg viewBox="0 0 100 100" class="w-36 h-36 svg-3d">
+          <ellipse cx="54" cy="54" rx="42" ry="28" fill="#111827" />
+          <ellipse cx="50" cy="50" rx="42" ry="28" fill="${hexColor}" stroke="#111827" stroke-width="6" />
+        </svg>
+      `;
     default:
       return "";
   }
@@ -194,19 +201,21 @@ function calculateAndShowResult() {
     type3: 0,
     type4: 0,
     type5: 0,
-    type6: 0
+    type6: 0,
+    type7: 0
   };
 
   state.answers.forEach((ans) => {
     counts[ans.type]++;
   });
 
-  // Priority weights: Type 6 > Type 1 > Type 5 > Type 3 > Type 2 > Type 4
+  // Priority weights: Type 6 > Type 1 > Type 5 > Type 3 > Type 7 > Type 2 > Type 4
   const priority = {
-    type6: 5,
-    type1: 4,
-    type5: 3,
-    type3: 2,
+    type6: 6,
+    type1: 5,
+    type5: 4,
+    type3: 3,
+    type7: 2,
     type2: 1,
     type4: 0
   };
